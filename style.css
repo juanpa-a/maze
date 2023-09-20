@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("assets/grass.png");
+    background-size: 50px 50px;
+    background-repeat: repeat;
+}
+
+.maze-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(20, 50px);
+}
+
+.maze-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.flag {
+    background-color: #48b1eaf6;
+    border-radius: 5px;
+}
+
+.found {
+    background-color: #fed19aee !important;
+}
+
+.path {
+    background-color: #aabd8c88;
+}
