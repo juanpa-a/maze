@@ -8,8 +8,10 @@ const classMap = {
 };
 
 const mazeContainer = document.getElementById("maze");
+let step;
 
 const setup = () => {
+    clearInterval(step);
     var element = document.getElementById("maze");
     element.innerHTML = "";
     maze.forEach((row, x) => {

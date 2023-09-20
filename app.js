@@ -19,11 +19,12 @@ const set_visited = (seen, cell, coords) => {
 };
 
 const find_path = async (maze, start, end) => {
+    setup()
     const q = [start];
     const seen = {};
     const prev = {};
 
-    const step = setInterval(() => {
+    step = setInterval(() => {
         const [curr_x, curr_y] = q.shift();
         const coords = `${curr_x},${curr_y}`;
         const cell = document.getElementById(coords);
@@ -65,7 +66,7 @@ const find_path = async (maze, start, end) => {
             clearInterval(step);
         }
 
-    }, 50 / q.length);
+    }, 150 / q.length);
 };
 
 // find_path(maze, [1, 0], [18, 19]);
