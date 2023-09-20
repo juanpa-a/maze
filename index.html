@@ -10,6 +10,10 @@
         <script defer src="app.js"></script>
     </head>
     <body>
-        <div id="maze" class="maze-grid" />
+        <div>
+            <div id="maze" class="maze-grid" />
+        </div>
+        <button onclick="find_path(maze, [1, 0], [18, 19]);">Find Path</button>
+        <button onclick="setup();">reset</button>
     </body>
 </html>

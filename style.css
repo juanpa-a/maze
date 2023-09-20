@@ -25,13 +25,14 @@ body {
 
 .flag {
     background-color: #48b1eaf6;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .found {
-    background-color: #fed19aee !important;
+    background-color: #fed19aaa !important;
+    border-radius: 7px;
 }
 
 .path {
-    background-color: #aabd8c88;
+    background-color: #aabd8c55;
 }

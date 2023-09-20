@@ -68,4 +68,4 @@ const find_path = async (maze, start, end) => {
     }, 50 / q.length);
 };
 
-find_path(maze, [1, 0], [18, 19]);
+// find_path(maze, [1, 0], [18, 19]);
